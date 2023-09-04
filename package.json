@@ -1,0 +1,78 @@
+{
+  "name": "@sxwy/cli",
+  "version": "1.0.0",
+  "description": "cli",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "sxwy",
+    "cli",
+    "node"
+  ],
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "bin": {
+    "sxwy": "./bin/cli.js"
+  },
+  "author": "chenjie",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:**",
+    "dev:babel": "babel -w -D -x .ts src -d lib",
+    "dev:type": "tsc -w --project tsconfig.types.json --outDir lib",
+    "build": "npm-run-all clean --parallel build:**",
+    "build:babel": "babel -D -x .ts ./src -d ./lib",
+    "build:type": "tsc --project tsconfig.types.json --outDir lib",
+    "clean": "rimraf lib",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "prerelease": "npm run build",
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sxwy/cli.git"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.19.0",
+    "chalk": "^5.2.0",
+    "commander": "^10.0.0",
+    "dirname-filename-esm": "^1.1.1",
+    "execa": "^7.1.1",
+    "fs-extra": "^11.1.0",
+    "inquirer": "^9.1.4",
+    "npmlog": "^7.0.1",
+    "ora": "^6.1.2",
+    "semver": "^7.3.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/plugin-transform-runtime": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "@babel/preset-typescript": "^7.18.6",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@sxwy/commitlint-config": "^1.4.0",
+    "@sxwy/eslint-config-vue": "^1.6.0",
+    "@sxwy/prettier-config": "^1.5.0",
+    "@sxwy/stylelint-config": "^1.7.0",
+    "@types/fs-extra": "^11.0.1",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.7.18",
+    "@types/npmlog": "^4.1.4",
+    "eslint": "^8.23.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.5",
+    "stylelint": "^14.12.1",
+    "typescript": "^4.8.3"
+  }
+}

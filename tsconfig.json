@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": false,
+    "declaration": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "types": ["node"],
+    "lib": ["esnext"]
+  },
+  "include": ["src/**/*"]
+}
