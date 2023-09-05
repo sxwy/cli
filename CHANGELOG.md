@@ -1,3 +1,10 @@
+# [1.0.0-beta.2](https://github.com/sxwy/cli/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2023-09-05)
+
+
+### Bug Fixes
+
+* 修正文档地址 ([efefc2e](https://github.com/sxwy/cli/commit/efefc2e28194e8071ca9e5efc3820b83c0c1641d))
+
 # 1.0.0-beta.1 (2023-09-04)
 
 
