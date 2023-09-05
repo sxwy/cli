@@ -63,4 +63,4 @@
 
 ## 相关链接
 
-- [使用文档](http://10.107.147.97:38000/standard/rules/project/template.html#脚手架)
+- [使用文档](https://sxwy.github.io/standard/rules/project/template.html#脚手架)
