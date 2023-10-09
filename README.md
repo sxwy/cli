@@ -4,7 +4,7 @@
 
 ## 技术栈
 
-- 运行环境：Node >= 16
+- 运行环境：Node.js 16.18.0
 - 开发框架：TypeScript + Babel
 - 依赖管理：Yarn
 
