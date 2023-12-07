@@ -30,7 +30,7 @@
     "clean": "rimraf lib",
     "prepare": "husky install",
     "pre-commit": "lint-staged",
-    "prerelease": "npm run build",
+    "prerelease": "yarn run build",
     "release": "semantic-release"
   },
   "repository": {
