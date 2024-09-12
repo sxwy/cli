@@ -13,7 +13,7 @@
 ```shell
 ├── .husky                            # git hooks 执行脚本
 ├── .vscode                           # vscode 配置
-├── es                                # bebal 编译文件
+├── es                                # babel 编译文件
 ├── example                           # 测试用例
 ├── src                               # 源代码
 │   ├── index.ts                      # 入口
