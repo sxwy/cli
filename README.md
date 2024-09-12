@@ -47,7 +47,7 @@
 
 ## 开发说明
 
-- 运行 SDK
+- 运行 cli
   ```shell
   yarn
   yarn dev
